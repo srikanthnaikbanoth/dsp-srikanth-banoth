@@ -1,0 +1,3 @@
+import numpy as np
+my_numpy_array np.arange(10)
+print("My Array:", my_numpy_array )
