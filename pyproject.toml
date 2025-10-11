@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "house_prices"
+version = "0.1.0"
+description = "House Prices modeling package"
+authors = [
+  { name="Srikanth Banoth" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "joblib"
+]
