@@ -1,19 +1,15 @@
 from __future__ import annotations
-
 from typing import Dict
 from pathlib import Path
 import json
 import joblib
 import numpy as np
 import pandas as pd
-
 from house_prices.preprocess import transform_features
 
 MODELS_DIR = Path("models")
 
-
 def _load_artifacts() -> Dict[str, object]:
-    """Load model and preprocessors from disk."""
     model = joblib.load(MODELS_DIR / "model.joblib")
     num_imp = joblib.load(MODELS_DIR / "num_imputer.joblib")
     scaler = joblib.load(MODELS_DIR / "scaler.joblib")
@@ -32,9 +28,7 @@ def _load_artifacts() -> Dict[str, object]:
         "feature_order": meta["feature_order"],
     }
 
-
 def make_predictions(input_data: pd.DataFrame) -> np.ndarray:
-    """Predict using persisted model and preprocessors."""
     art = _load_artifacts()
     pp = {
         "num_imputer": art["num_imputer"],

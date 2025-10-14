@@ -1,5 +1,3 @@
-"""house_prices package initialization."""
-
 from house_prices.train import build_model
 from house_prices.inference import make_predictions
 from house_prices.preprocess import (

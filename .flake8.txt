@@ -1,0 +1,56 @@
+# Core data/API libraries
+pandas
+scipy
+scikit-learn
+nltk
+joblib
+requests
+python-dotenv
+
+# FastAPI and Webapp
+fastapi[all]
+uvicorn
+streamlit
+
+# PostgreSQL database connector
+psycopg2-binary
+
+# Airflow (Ensure you select a stable version compatible with your Python)
+apache-airflow==2.7.2  # Or a recent stable version
+
+# ... other requirements ...
+pendulum==2.1.2  # A stable, older version often works better with some Airflow 2.x releases
+apache-airflow==2.7.2
+# ...
+<<<<<<< HEAD
+flask-session
+=======
+flask-session
+
+fastapi
+uvicorn
+>>>>>>> 259c16e6 (Your commit message)
+
+
+
+# Core dependencies
+pandas==2.2.2
+numpy==1.26.4
+
+# Machine learning / data processing
+scikit-learn==1.5.2
+scipy==1.14.1
+
+# NLP tools (for processing movie overviews)
+nltk==3.9.1
+scikit-learn==1.5.2
+
+# Visualization (optional, for EDA)
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Web API / serving (FastAPI + Uvicorn)
+fastapi==0.115.2
+uvicorn==0.32.0
+
+# Data validation / Pyda
